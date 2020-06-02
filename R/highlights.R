@@ -2,7 +2,7 @@
 #' @param color Color to use for background
 #' @param tag Tag to use for wrapping \code{string}
 wrap_html_bgcolor <- function(string, color, tag) {
-  paste0("<", " style=\"background-color:", color, "\">",
+  paste0("<", tag, " style=\"background-color:", color, "\">",
          string,
          "</", tag, ">")
 }
