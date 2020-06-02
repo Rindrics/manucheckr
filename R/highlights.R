@@ -24,7 +24,7 @@ highlight <- function(string, color = "skyblue") {
 #' Use this function with \code{params} function of Rmarkdown.
 #' @inheritparams wrap_html_bgcolor
 #' @export
-checkme <- function(string, color = yellow) {
+checkme <- function(string, color = "yellow") {
   if (params$draft) {
     return(wrap_html_bgcolor(paste0("- \u25A2", string), color = color, tag = "div"))
   }
